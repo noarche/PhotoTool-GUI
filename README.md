@@ -2,7 +2,7 @@
 exiftool alternative | Batch Commands: Remove metadata from any type of photo, Resize by %, compress by %, Add keywords, comments, author, copyright.
 
 
-Create directory called \dphoto\ and put the pictures you want to work with here.
+Create directory called \_pics_\ and put the pictures you want to work with here.
 Run script
 
 Click Remove metadata button to remove metadata
