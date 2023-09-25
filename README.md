@@ -1,6 +1,11 @@
 # PhotoTool
 exiftool alternative | Batch Commands: Remove metadata from any type of photo, Resize by %, compress by %, Add keywords, comments, author, copyright.
 
+# Updates
+v1.0.1 - bugfix to remove comments, causing script to crash
+
+# About
+
 EXIF TOOL GUI
 
 Create directory called \_pics_\ and put the pictures you want to work with here.
