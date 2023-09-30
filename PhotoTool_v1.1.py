@@ -1,5 +1,5 @@
 import os
-from tkinter import Tk, Button, messagebox, ttk, simpledialog
+from tkinter import Tk, Button, messagebox, ttk, simpledialog, Toplevel, IntVar
 from PIL import Image
 import piexif
 
@@ -86,9 +86,36 @@ def add_specific_metadata():
 
     messagebox.showinfo("Success", "Metadata added to all photos!")
 
+def convert_images():
+    directory = "_pics_"
+    format_options = [".jpg", ".png", ".webp"]
+    
+    def submit_conversion():
+        choice = var.get()
+        if choice < len(format_options):
+            selected_format = format_options[choice]
+            for filename in os.listdir(directory):
+                if filename.endswith(tuple(format_options)) and not filename.endswith(selected_format):
+                    filepath = os.path.join(directory, filename)
+                    output_filepath = os.path.splitext(filepath)[0] + selected_format
+                    with Image.open(filepath) as img:
+                        img.save(output_filepath)
+            window.destroy()
+            messagebox.showinfo("Success", f"Images converted to {selected_format} format!")
+        else:
+            messagebox.showwarning("Error", "Invalid format selected!")
+    
+    window = Toplevel(root)
+    window.title("Choose Conversion Format")
+    var = IntVar()
+    for i, option in enumerate(format_options):
+        ttk.Radiobutton(window, text=option, variable=var, value=i).pack(anchor="w", padx=20, pady=5)
+    ttk.Button(window, text="Convert", command=submit_conversion).pack(pady=10)
+
+
 root = Tk()
 root.title("Photo Processor")
-root.geometry("400x400")
+root.geometry("180x460")
 root.resizable(0, 0)
 
 root.configure(bg="#2e2e2e")
@@ -111,4 +138,8 @@ add_keywords_button.pack(pady=5)
 metadata_button = ttk.Button(root, text="Add Metadata", command=add_specific_metadata)
 metadata_button.pack(pady=5)
 
+convert_button = ttk.Button(root, text="Convert Images", command=convert_images)
+convert_button.pack(pady=5)
+
 root.mainloop()
+
