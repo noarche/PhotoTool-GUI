@@ -19,4 +19,4 @@ Click add metadata to add author, copyright, comments
 Click resize and input # of percentage to resize by
 Click compress and input # of percentage to compress by
 
-[![noarche's GitHub stats](https://github-readme-stats.vercel.app/api?username=noarche)](https://github.com/noarche/github-readme-stats)
+![noarche's GitHub stats](https://github-readme-stats.vercel.app/api?username=noarche&show_icons=true&theme=transparent)
