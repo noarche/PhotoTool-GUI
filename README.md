@@ -3,7 +3,6 @@ exiftool alternative | Batch Commands: Remove metadata from any type of photo, R
 
 ![screenshot](https://github.com/noarche/PhotoTool-GUI/blob/main/September%2030%202023%200803%20AM.jpg?raw=true)
 
-
 # Updates
 v1.0.1 - bugfix to remove comments, causing script to crash
 v1.1 - Added button to convert images to .jpg .png .webp
@@ -20,3 +19,4 @@ Click add metadata to add author, copyright, comments
 Click resize and input # of percentage to resize by
 Click compress and input # of percentage to compress by
 
+[![noarche's GitHub stats](https://github-readme-stats.vercel.app/api?username=noarche)](https://github.com/noarche/github-readme-stats)
