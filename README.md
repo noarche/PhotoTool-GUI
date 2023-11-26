@@ -5,7 +5,12 @@ exiftool alternative | Batch Commands: Remove metadata from any type of photo, R
 
 # Updates
 v1.0.1 - bugfix to remove comments, causing script to crash
+
 v1.1 - Added button to convert images to .jpg .png .webp
+
+webp Converter.py - Converts dir of jpg to webp. Resize by %. Compression by %. 
+
+
 # About
 
 EXIF TOOL GUI
