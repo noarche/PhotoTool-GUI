@@ -4,6 +4,13 @@ exiftool alternative | Batch Commands: Remove metadata from any type of photo, R
 ![screenshot](https://github.com/noarche/PhotoTool-GUI/blob/main/September%2030%202023%200803%20AM.jpg?raw=true)
 
 # Updates
+Added 2 scripts 
+
+Batch_Crop_Images_By_Percentage.py ------ This tool ask you what percentage to crop photo by and cuts that percentage off the bottom of the photo. User is also prompted for directory with images to batch process or Crop multiple photos at once. Original files are overwritten.
+
+webp2jpg.py ------ Batch converts directory of webp images back to jpg. (might come in handy).
+
+# Updates
 v1.0.1 - bugfix to remove comments, causing script to crash
 
 v1.1 - Added button to convert images to .jpg .png .webp
