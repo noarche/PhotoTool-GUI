@@ -4,6 +4,11 @@ exiftool alternative | Batch Commands: Remove metadata from any type of photo, R
 ![screenshot](https://github.com/noarche/PhotoTool-GUI/blob/main/September%2030%202023%200803%20AM.jpg?raw=true)
 
 # Updates
+Added support for Webp Format. 
+Now .exe is available to download as windows portable app
+App now prompts user for directory to open for pics instead of using \_pics_\
+
+# Updates
 Added 2 scripts 
 
 Batch_Crop_Images_By_Percentage.py ------ This tool ask you what percentage to crop photo by and cuts that percentage off the bottom of the photo. User is also prompted for directory with images to batch process or Crop multiple photos at once. Original files are overwritten.
@@ -22,8 +27,6 @@ webp2jpg.py - Converts dir of jpg to webp. Resize by %. Compression by %.
 
 EXIF TOOL GUI
 
-Create directory called \_pics_\ and put the pictures you want to work with here.
-Run script
 
 Click Remove metadata button to remove metadata
 Click add keywords button to add keywords seperated by ","
